@@ -1,0 +1,85 @@
+/* Global setup */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  font-family: 'yg-jalnan';
+  width: 100%;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  z-index: 1;
+}
+
+.user-info {
+  display: flex;
+  justify-content: end;
+}
+
+.login, .signup {
+  margin: 12px;
+  color: black;
+}
+
+.signup {
+  margin-right: 24px;
+}
+
+.login:hover,
+.signup:hover {
+  color: #f0f0f0;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.menu__title {
+  margin: 0px;
+}
+
+.menu__logo {
+  width: 32px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.info__welcom{
+  margin: 12px;
+}
+
+.form__button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  margin: 12px;
+  margin-right: 24px;
+}
+
+.form__button:hover {
+  color: #f0f0f0;
+}
+
+/* 스크롤 확인용 */
+.temp {
+  padding-top: 500px;
+  height: 1000px;
+}
