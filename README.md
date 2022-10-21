@@ -1,4 +1,4 @@
-# 🚩 Tech Crawling Web page Projec
+# 🚩 Tech Crawling Web page Project
 
 ## 📋 개요
 
