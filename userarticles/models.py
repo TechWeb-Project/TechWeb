@@ -2,6 +2,7 @@ from django.db import models
 from django.conf import settings
 from articles.models import Tech, Company
 
+
 # 유저들이 쓸 수 있는 게시글
 class UserArticle(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
