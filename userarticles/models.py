@@ -1,7 +1,6 @@
 from django.db import models
 from django.conf import settings
-from . import articles
-
+from articles.models import Tech, Company
 
 # 유저들이 쓸 수 있는 게시글
 class UserArticle(models.Model):
@@ -11,9 +10,9 @@ class UserArticle(models.Model):
     title = models.CharField(max_length=50)
     content = models.TextField(max_length=200)
     created_now = models.DateTimeField(auto_now_add=True)
-    updated_now = models.DateTimeFiedl(auto_now=True)
-    tech = models.ManyToManyField(articles.Tech)
-    company = models.ManyToManyField(articles.Company)
+    updated_now = models.DateTimeField(auto_now=True)
+    tech = models.ManyToManyField(Tech)
+    company = models.ManyToManyField(Company)
 
 # 유저들의 게시글에 다는 댓글
 class Comment(models.Model):
