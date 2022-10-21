@@ -21,4 +21,4 @@ class Comment(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     content = models.TextField(max_length=200)
     created_now = models.DateTimeField(auto_now_add=True)
-    updated_now = models.DateTimeFiedl(auto_now=True)
+    updated_now = models.DateTimeField(auto_now=True)
