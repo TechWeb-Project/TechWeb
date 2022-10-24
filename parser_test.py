@@ -4,8 +4,7 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tech_crawl_web_pjt.settings")
 import django
 django.setup()
-from crawling.models import crawlingData
-
+from articles.models import Article
 
 
 # NHN 크롤링 (클라우드)

@@ -4,7 +4,7 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tech_crawl_web_pjt.settings")
 import django
 django.setup()
-from crawling.models import crawlingData
+from articles.models import Article
 
 # 카카오 크롤링 (AI)
 def kakao_crawling_ai():
@@ -30,7 +30,7 @@ def kakao_crawling_ai():
         links.append(title.get('href'))
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -62,7 +62,7 @@ def kakao_crawling_cloud():
         links.append(title.get('href'))
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -94,7 +94,7 @@ def kakao_crawling_FE():
         links.append(title.get('href'))
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -126,7 +126,7 @@ def kakao_crawling_BE():
         links.append(title.get('href'))
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -165,7 +165,7 @@ def coupang_crawling_ai():
         contents.append(content.text.strip())
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -204,7 +204,7 @@ def coupang_crawling_BE():
         contents.append(content.text.strip())
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -302,7 +302,7 @@ def woowahan_crawling_BE():
     contents.append(my_content.text.strip())
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -400,7 +400,7 @@ def woowahan_crawling_FE():
     contents.append(my_content.text.strip())
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -433,7 +433,7 @@ def line_crawling_cloud():
     contents.append(my_contents + "...")
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -469,7 +469,7 @@ def line_crawling_FE():
         contents.append(content + '...')
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -505,7 +505,7 @@ def line_crawling_BE():
         contents.append(content + '...')
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -543,7 +543,7 @@ def toss_crawling_FE():
         contents.append(content.text.strip())
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -612,7 +612,7 @@ def daangn_crawling_ai():
 
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -653,7 +653,7 @@ def daangn_crawling_FE():
     contents.append(my_contents.text.strip()[:120] + '...')
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -748,7 +748,7 @@ def daangn_crawling_BE():
 
 
     for item in zip(titles, contents, links):
-        crawlingData(
+        Article(
             title=item[0],
             content=item[1],
             link=item[2],
@@ -773,7 +773,7 @@ def nhn_crawling_ai():
     ]
 
     for i in range(len(links)):
-        crawlingData(
+        Article(
             title=titles[i],
             content=contents[i],
             link=links[i],
@@ -799,7 +799,7 @@ def nhn_crawling_BE():
     ]
 
     for i in range(len(links)):
-        crawlingData(
+        Article(
             title=titles[i],
             content=contents[i],
             link=links[i],
@@ -833,7 +833,7 @@ def nhn_crawling_FE():
     ]
 
     for i in range(len(links)):
-        crawlingData(
+        Article(
             title=titles[i],
             content=contents[i],
             link=links[i],
@@ -866,7 +866,7 @@ def nhn_crawling_cloud():
     ]
 
     for i in range(len(links)):
-        crawlingData(
+        Article(
             title=titles[i],
             content=contents[i],
             link=links[i],

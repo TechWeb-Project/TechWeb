@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     # pjt apps
     'accounts',
     'articles',
-    'crawling',
     'userarticles',
 
 
