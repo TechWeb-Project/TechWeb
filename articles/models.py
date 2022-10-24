@@ -16,12 +16,16 @@ class Company(models.Model):
         return self.name
 
 
+
 class Article(models.Model):
     
+
     title = models.CharField(max_length=50)
     content = models.CharField(max_length=150)
     link = models.URLField()
     company = models.TextField()
     tech = models.TextField()
     thumbnail = models.ImageField(null=True)
+
+
 
