@@ -44,8 +44,7 @@
 
 ### 🗂 DIAGRAM
 
-![diagram](https://user-images.githubusercontent.com/109324634/196742429-0e0fb16b-cb92-4207-b80b-9edaf005370d.png)
-
+![pjtdb모델](https://user-images.githubusercontent.com/109324637/198864843-1489e7c0-4789-4030-89d3-b528a86e0916.jpg)
 
 
 ### 🧠 BRAIN STORMING
