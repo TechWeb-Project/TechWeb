@@ -1,7 +1,10 @@
 from django.db import models
 from django.conf import settings
 from articles.models import Tech, Company
+<<<<<<< HEAD
 
+=======
+>>>>>>> a68023d78b1573e9e29d453442ab6492717a9554
 
 # 유저들이 쓸 수 있는 게시글
 class UserArticle(models.Model):

@@ -16,6 +16,7 @@ class Company(models.Model):
         return self.name
 
 
+
 class Article(models.Model):
     
     # 각각의 아티클 객체는 하나의 기술/기업 태그를 가지게 되므로 N:1 관계가 맞지 않나
@@ -34,6 +35,5 @@ class Article(models.Model):
     # url = models.URLField()
 
     # 만약에 주제/기업에 따라 정해진 이미지를 고정적 넣어주면 굳이 모델에 할 필요가 없을 거 같아서 일단 주석 처리
-    # thumbnail = models.ImageField()
-
+    # thumbnail = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='article')
 
